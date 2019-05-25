@@ -1,6 +1,6 @@
 # 가변적 인자
 
-def total(*numbers):
+def total(*numbers): #tuple형태로 받습니다.
 
     tot = 0
 
