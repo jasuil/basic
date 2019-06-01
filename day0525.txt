@@ -1,11 +1,74 @@
- with open문으로 file 읽기/쓰기
+>> day03 - 19/06/01
+
+ - 지난시간 정리
+
+ - Inheritance(상속)
+
+ - Module
+    내부 모듈
+    외부 모듈
+    사용자 모듈 만들기
+
+ https://docs.python.org
+ https://docs.python.org/ko/3/library/
+
+>>> import sys
+>>> sys.path
+>>> sys.path[1]
+>>> sys.path.append('c:\Pysrc')
+>>> sys.path
+
+  형식>
+   방법1)
+   import threading
+   import time
+ 또는
+   import threading, time, os, sys,...
+
+   방법2)
+   form Math import acos, factorial
+
+   방법3)
+   form Math import *
+
+
+ - xml
+
+ - sqlite3 (database)
+
+ - 간단한 알고리즘(자료구조) - 스택/ 큐/ 링크드리스트/ 재귀....
+
+
+================================================
+
+>> day02 - 19/05/25
+
+- 제어문
+   while
+
+- method :
+   def  methodName(): 내용기재
+   *args
+   **kwargs
+
+  문제1] 사칙연산 함수  add(x,y), sub( - ) , mul(*), div(/)  2개는 리턴 타입으로 만들기
+
+
+- file
+  ex)
+   f = open("파일명.확장자","모드") : r, w, a, b
+     사용(쓰기/읽기)
+   f.close()
+
+
+  with open문으로 file 읽기/쓰기
   ex)
   with open("파일명.확장자","모드") as f :
 	사용(쓰기/읽기)
 
   with 문을 이용하면 with 블록을 벗어나는 순간 열린 파일 객체가 자동으로 close되어 편리함.
 
- - try / except  : 예외처리 
+ - try / except  : 예외처리
 
  - class 설계
 
@@ -25,7 +88,7 @@
  과제0] class Score: 생성해서
            국어, 영어, 전산 점수 받을 수 있는 초기화 함수 만들고
  	   총점 구하는 함수
-	   평균 구하는 함수 
+	   평균 구하는 함수
 	   출력하는 함수 만들어서
 	   입력하는 함수 <--- 추가
  	객체 생성해서 결과 출력하는 프로그램 작성
@@ -33,8 +96,8 @@
 과제1]
 -첫번째 list 와 두번째 list 의 length 는 동일
 -두번째 list 의 각 element 는 첫번째 list element 의 제곱이어야 한다.
--서로 match 되는 element 가 위 조건과 같은지 비교하여 
-   참이면 "Two lists are matched", 
+-서로 match 되는 element 가 위 조건과 같은지 비교하여
+   참이면 "Two lists are matched",
    거짓이면 "Two lists are unmatched" 출력
 예)
 frequency_check([1,2,3,2,5,6], [1,4,9,4,25,36]) --> lists are matched
@@ -42,9 +105,9 @@ frequency_check([1,2,3,2,5,6], [1,4,9,4,25,36]) --> lists are matched
 과제2]
 2 개 string 을 입력 받아 두글자 조합의 frequency 가 같은지 비교한다.
 
-예, (182, 281): true, 
-     (34, 14): false, 
-     (3589578, 5879385): true,  
+예, (182, 281): true,
+     (34, 14): false,
+     (3589578, 5879385): true,
      (22, 222): false
 (해답) 조합의 frequency 가 같으려면 두 string 의 길이가 같고 글자들의 frequency 가 같아야 한다.
 
@@ -67,7 +130,7 @@ sameFrequency('1233', '2133') --> mached
 오렌지: 32 개
 배 : 15 개
 
-dictionary 를 이용하여 재고 과일의 총 금액을 계산하라. 
+dictionary 를 이용하여 재고 과일의 총 금액을 계산하라.
 (가격 dictionary 와 재고 dictionary 를 별도로 작성)
 
 예상 output:
@@ -90,10 +153,10 @@ The total money is 117000
    students = ["김철수", "홍길동", "문재인", "김정은", "트럼프", "성춘향"]
 
   결과 출력 예상>
-   print(check_list(students, "홍길동")) 
+   print(check_list(students, "홍길동"))
 
 
-- 모듈 
+- 모듈
 
 - 패키지
 
@@ -109,7 +172,7 @@ The total money is 117000
  https://www.anaconda.com/distribution/#download-section
  https://www.jetbrains.com/pycharm/download/#section=windows
 
-- 다운로드 사이트 
+- 다운로드 사이트
   https://www.python.org/
 
  - 아나콘다
@@ -141,12 +204,12 @@ https://github.com/naver/d2codingfont
 
 0x숫자 : 16진수
 0숫자 : 8진수
-숫자 : 10진수 
+숫자 : 10진수
 
 켤레복소수 : 허수부분의 부호를 바꿈
 복소수 a=1+2j 에 대하여 허수부분의 부호를 바꾼 a=1-2j를 '켤레복소수'라고 한다.
 
-2) 연산자 
+2) 연산자
 
  0을 제외한 모든것은 참 - 10, 'string', 12.34, -3, 'A',....
  bool(-1)
@@ -155,13 +218,13 @@ https://github.com/naver/d2codingfont
 
  \문자 : 제어문자
  \n , \t , \a,...
- 
- %문자 : 포맷팅(출력서식)  - 2.x  
+
+ %문자 : 포맷팅(출력서식)  - 2.x
  %s , %c , %f, %d ...
 
  "{} {}".format(1, 2)   - 3.x
- "{1} {0}".format(1, 2) 
- "{a} {b}".format(a=1, b=2) 
+ "{1} {0}".format(1, 2)
+ "{a} {b}".format(a=1, b=2)
 
 3) 제어문
   if ~ elif ~ else
@@ -176,14 +239,14 @@ https://github.com/naver/d2codingfont
 		윤년
 
 
-  
+
 4) 함수
 5) 클래스
 6) 예외처리
 7) 모듈
 8) 패키지
 
- 
+
 
 ----------------------
 > 강사컴 접속
@@ -191,8 +254,11 @@ https://github.com/naver/d2codingfont
   \\desktop-09ente0
 
    id / pwd
-  python / python 
+  python / python
 
 
   이도연
   happydoyeon88@gmail.com
+
+
+

@@ -20,10 +20,16 @@ for i in aws.rows:
     total =  kor + eng + math
     avg = total / 2
 
-    aws.cell(row=index, column=6).value = total
-    aws.cell(row=index, column=7).value = avg
+    aws.cell(row=index, column=5).value = total
+    aws.cell(row=index, column=6).value = avg
     print("{}, {}, {}, {}, {}, {}".format(name, kor, eng, math, total, avg))
 
 print("*************************")
 
 excelFile.save("scoreAppend.xlsx")
+
+
+excelFile2 = xl.load_workbook("scoreAppend.xlsx")
+aws = excelFile.active
+for i in aws.rows:
+    print(i)
