@@ -1,0 +1,23 @@
+강사컴 접속
+
+192.168.0.14
+  desktop-09ente0
+
+
+id:python
+pw:python
+
+happydoyeon88@gmail.com
+
+/*****************************/
+
+jump to python (강의 참고 사이트)
+
+coding  전용 폰트
+D2coding font
+
+github.com/d2codingfont
+
+
+//문법강의
+https://www.javatpoint.com
