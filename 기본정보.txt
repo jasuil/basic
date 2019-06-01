@@ -1,4 +1,4 @@
-°­»çÄÄ Á¢¼Ó
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
 192.168.0.14
   desktop-09ente0
@@ -11,13 +11,16 @@ happydoyeon88@gmail.com
 
 /*****************************/
 
-jump to python (°­ÀÇ Âü°í »çÀÌÆ®)
+jump to python (ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®)
 
-coding  Àü¿ë ÆùÆ®
+coding  ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®
 D2coding font
 
 github.com/d2codingfont
 
+db
+dbguide.net
 
-//¹®¹ý°­ÀÇ
+
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 https://www.javatpoint.com
