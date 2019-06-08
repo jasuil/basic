@@ -1,4 +1,5 @@
 # excel file read
+# pip freeze -설치된 라이브러리 목록 나열함
 
 import openpyxl as xl
 
