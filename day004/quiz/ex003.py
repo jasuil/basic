@@ -9,7 +9,19 @@ print
 """
 
 import re, sys
-import bs4
+import urllib.request
 
+from selenium import webdriver as webDrv
 
+browser = webDrv.Chrome("C:/Users/kosmo04-22/Desktop/webScraping/chromedriver")
+browser.get("file:///D:/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B8%B0%EC%B4%88%EB%B0%98/basic/day004/quiz/google-python-exercises/babynames/baby1990.html")
+
+menus = browser.find_elements_by_css_selector("tbody tr")
+
+pypi = None
+
+for m in menus:
+    #if m.text == "PyPI":
+    #    pypi = m
+    print(m.text)
 
