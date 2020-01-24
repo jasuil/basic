@@ -1,9 +1,12 @@
-#
+
+#두 list가 같은지 비교하는 함수
+
 
 def crit(a,b):
 
     aSet = set(a)
     bSet = set(b)
+
     flag = False
     countFalse = 0
 
@@ -22,3 +25,4 @@ def crit(a,b):
 
 
 print(crit([1,2,3,2,5,6], [1,2,3,2,5,6]))
+
