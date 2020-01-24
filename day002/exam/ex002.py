@@ -1,18 +1,28 @@
+
 #두 list가 같은지 비교하는 함수
+
 
 def crit(a,b):
 
     aSet = set(a)
     bSet = set(b)
-    sameLength = False
-    sameElement = True
 
-    for e in aSet:
-        if e in bSet: pass
-        else: sameElement = False
+    flag = False
+    countFalse = 0
 
-    if len(aSet) == len(bSet): sameLength = True
+    for i in aSet:
+        for i2 in bSet:
+            if i == i2:
+                pass
+            else:
+                countFalse += 1
 
-    return sameLength & sameElement
+    if len(aSet) == len(bSet) and countFalse == 0:
+        flag = True
 
-print(crit([1,2,3], [1,2,3]))
+
+    return flag
+
+
+print(crit([1,2,3,2,5,6], [1,2,3,2,5,6]))
+
